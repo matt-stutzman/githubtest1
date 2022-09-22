@@ -1,9 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .headerbox{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color:#400000;
     color: white;
-    font-family: 'arial';
+    font-family: 'lucida handwriting';
+    font-size: 36px;
+    padding:50px;
 }
 .txtbox{
     background-color: red;
