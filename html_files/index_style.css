@@ -1,3 +1,10 @@
+.headerbox{
+    display: flex;
+    justify-content: center;
+    background-color:#400000;
+    color: white;
+    font-family: 'arial';
+}
 .txtbox{
     background-color: red;
 }
