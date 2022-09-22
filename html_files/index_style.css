@@ -11,6 +11,12 @@
     font-size: 36px;
     padding:50px;
 }
+.txtboxwrap{
+    font-family: 'arial';
+    background-color: black;
+    color:white;
+}
 .txtbox{
-    background-color: red;
+    width:50%;
+    font-size: 24px;
 }
