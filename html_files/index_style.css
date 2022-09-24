@@ -11,6 +11,12 @@
     font-size: 36px;
     padding:50px;
 }
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 .txtboxwrap{
     font-family: 'arial';
     background-color: #bcbcbc;
@@ -25,12 +31,14 @@
 .txtbox{
     width:50%;
     font-size: 24px;
+    color: black;
 }
-.link{
+.footer{
     text-align: center;
     /*height: 100%;*/
     padding: 15px;
     background-color: white;
+    margin-top: auto;
 }
 
 
@@ -79,6 +87,25 @@ html{
     background-color: #fff;
 }
 
+.opening{
+    display: flex;
+    /*justify-content: center;*/
+    /*justify: center;*/
+    width:60%;
+    font-family: serif;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    border: 1px solid red;
+    padding:25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+
+
+/*For laptops only*/
 
 @media only screen and (min-width:1024px){
     .masonry{
