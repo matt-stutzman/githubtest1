@@ -19,11 +19,26 @@ body{
 }
 .txtboxwrap{
     font-family: 'arial';
-    background-color: #bcbcbc;
+    background-color: #400000;
     color:white;
     display: flex;
     padding: 30px;
 }
+
+.opening{
+    display: flex;
+    /*justify-content: center;*/
+    /*justify: center;*/
+    width:100%;
+    font-family: serif;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    border: 1px solid black;
+    padding:25px;
+    background-color: #bcbcbc;
+}
+
 .gordon{
    width:50%; 
    padding: 20px;
@@ -86,28 +101,45 @@ html{
 .collapse{
     background-color: #fff;
 }
-
-.opening{
-    display: flex;
-    /*justify-content: center;*/
-    /*justify: center;*/
-    width:60%;
+.purchaseBeefs{
+    width:100%;
     font-family: serif;
     text-align: center;
-    font-size: 24px;
+    font-size: 38px;
     color: black;
-    border: 1px solid black;
     padding:25px;
-    margin-left: 20%;
-    margin-right: 20%;
-    
+    background-color: #400000;
 }
-
+.beef{
+    border: 3px solid black;
+    background-color: #bcbcbc;
+    color: black;
+}
+.price{
+    color: white;
+    text-align: right;
+}
 
 
 /*For laptops only*/
 
 @media only screen and (min-width:1024px){
+    .purchaseBeefs{
+    font-size: 24px;
+    }
+    .opening{
+        width:60%;
+        font-size: 24px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .link{
+    text-align: center;
+    height: 100%;
+    padding: 15px;
+    }
+    
+    
     .masonry{
         column-count: 3;
     }
@@ -137,11 +169,6 @@ html{
     }
     .ritem{
         font-size: 20px;
-    }
-    .link{
-    text-align: center;
-    height: 100%;
-    padding: 15px;
     }
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
