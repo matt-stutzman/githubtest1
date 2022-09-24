@@ -29,6 +29,36 @@
 .link{
     background-color: black;
 }
+
+
 .navbar-brand{
-    color: white;
+    color: blue;
+    background-color: #fff;
+    /*font-family: Didot, "Didot LT STD";*/
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+    text-align: center;
+    width: 100%px;
+    height: 200%px;
+    margin-left: 3%;
+}
+.navbar{
+    height: 55px;
+    background-color: #fff !important;
+}
+.navbar-nav{
+    justify-content: space between;
+    width: 300% !important;
+    margin-left: 60%;
+    /*height: 100px !important;*/
+}
+.nav-item{
+    /*color: red;*/
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+    z-index: 99 !important;
+}
+.active{
+    color: green;
 }
