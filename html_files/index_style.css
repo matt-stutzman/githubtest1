@@ -32,8 +32,8 @@
 
 
 .navbar-brand{
-    color: blue;
-    background-color: #fff;
+    color: #124E78 !important;
+    background-color: #FFE3E0 !important;
     /*font-family: Didot, "Didot LT STD";*/
     font-family: 'Courier New', monospace;
     font-size: 40px;
@@ -43,22 +43,27 @@
     margin-left: 3%;
 }
 .navbar{
+    color: red;
+    background-color: red !important;
     height: 55px;
-    background-color: #fff !important;
 }
 .navbar-nav{
     justify-content: space between;
     width: 300% !important;
     margin-left: 60%;
+    background-color: #FFE3E0;
     /*height: 100px !important;*/
 }
 .nav-item{
-    /*color: red;*/
-    background-color: #eee;
+    color:#124E78 !important;
+    background-color: #FFE3E0;
     width: 100%;
     text-align: center;
     z-index: 99 !important;
 }
 .active{
     color: green;
+}
+.collapse{
+    background-color: red !important;
 }
