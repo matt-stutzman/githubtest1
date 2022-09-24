@@ -13,7 +13,7 @@
 }
 .txtboxwrap{
     font-family: 'arial';
-    background-color: black;
+    background-color: #bcbcbc;
     color:white;
     display: flex;
     padding: 30px;
@@ -27,36 +27,14 @@
     font-size: 24px;
 }
 .link{
-    background-color: black;
-}
-
-
-.navbar-brand{
-    color: #124E78 !important;
-    background-color: #FFE3E0 !important;
-    /*font-family: Didot, "Didot LT STD";*/
-    font-family: 'Courier New', monospace;
-    font-size: 40px;
     text-align: center;
-    width: 100%px;
-    height: 200%px;
-    margin-left: 3%;
+    /*height: 100%;*/
+    padding: 15px;
+    background-color: white;
 }
-.navbar{
-    color: red;
-    background-color: red !important;
-    height: 55px;
-}
-.navbar-nav{
-    justify-content: space between;
-    width: 300% !important;
-    margin-left: 60%;
-    background-color: #FFE3E0;
-    /*height: 100px !important;*/
-}
+
+
 .nav-item{
-    color:#124E78 !important;
-    background-color: #FFE3E0;
     width: 100%;
     text-align: center;
     z-index: 99 !important;
@@ -64,6 +42,88 @@
 .active{
     color: green;
 }
+.navbar-brand{
+    font-family: 'lucida handwriting';
+    font-size: 40px;
+    text-align: center;
+    width: 100%px;
+    height: 200%px;
+    margin-left: 3%;
+}
+.navbar{
+    height: 155px;
+}
+.navbar-nav{
+    justify-content: space between;
+}
+.item { 
+  padding: 1em;
+  margin: 0 0 1.5em;
+  font-size: 25px;
+}
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.col-lg{
+    font-size: 40px;
+    text-align: center;
+}
 .collapse{
-    background-color: red !important;
+    background-color: #fff;
+}
+
+
+@media only screen and (min-width:1024px){
+    .masonry{
+        column-count: 3;
+    }
+    .item{
+        font-size: 15px;
+    }
+    .navbar{
+    height: 55px;
+    }
+    .navbar-nav{
+        width: 300% !important;
+        margin-left: 60%;
+    }
+    .navbar-brand{
+        font-size: 50px;
+    }
+    .col-lg img{
+        width: 80%;
+    }
+    .col-lg{
+        font-size: 32px;
+        padding: 1em;
+    }
+    .about{
+        font-size: 21px;
+        padding: 1em;
+    }
+    .ritem{
+        font-size: 20px;
+    }
+    .link{
+    text-align: center;
+    height: 100%;
+    padding: 15px;
+    }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
 }

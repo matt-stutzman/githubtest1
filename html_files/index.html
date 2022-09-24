@@ -19,9 +19,9 @@
         Include navbar with bootstrap
         -->
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light ">
           
-          <a class="navbar-brand" href="index.html">Celebrity Beefs</a>
+          <a class="navbar-brand" href="index.html"> Celebrity Beefs </a>
           
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,20 +31,32 @@
             <ul class="navbar-nav mr-auto">
               
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html"> Home  <span class="sr-only">(current)</span></a>
               </li>
               
               <li class="nav-item">
                 <a class="nav-link" href="menu.html">Menu</a>
               </li>
               
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More info
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!--<a class="dropdown-item" href="index.html">Projects</a>-->
+                  <a class="dropdown-item" href="purchase.html">Purchase</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="about.html">About </a>
+                </div>
               </li>
-              
+      <!--<li class="nav-item">-->
+      <!--  <a class="nav-link disabled" href="#">Disabled</a>-->
+      <!--</li>-->
             </ul>
           </div>
         </nav>
+        
+        
         <div class = 'txtboxwrap'>
             <p class = 'txtbox'>
                 This is some filler text. This is some filler text.
@@ -87,7 +99,11 @@
             <img class='gordon' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Gordon_Ramsay_colour_Allan_Warren.jpg/360px-Gordon_Ramsay_colour_Allan_Warren.jpg' alt='gordon ramsay'>
         </div>
         <div class='link'>
-        <a href='menu.html'> Browse the finest cuts of celebrity beef.</a>
+        <a href='menu.html'> Browse the finest cuts of celebrity beef</a> <br>
+        <a href='about.html'> About</a> <br>
+        <a href='purchase.html'> Purchase</a><br>
+        <a href='index.html'> www.celebritybeefs.com</a>
+        <p> Copyright Matthew Stutzman and Brian Hayes 2022</p>
        </div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
