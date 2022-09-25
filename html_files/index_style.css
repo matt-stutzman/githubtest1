@@ -23,6 +23,9 @@ body{
     color:white;
     display: flex;
     padding: 30px;
+    width: 100%;
+    flex-direction: column;
+    min-height: 120vw;
 }
 
 .opening{
@@ -40,13 +43,45 @@ body{
 }
 
 .gordon{
-   width:50%; 
+   margin: auto;
    padding: 20px;
+   height: 150%;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #400000;
+}
+.overlaytext {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
 .txtbox{
-    width:50%;
-    font-size: 24px;
-    color: black;
+    font-size: 55px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    row-count:1;
 }
 .footer{
     text-align: center;
@@ -55,7 +90,9 @@ body{
     background-color: white;
     margin-top: auto;
 }
-
+.about{
+    font-size: 3em;
+}
 
 .nav-item{
     width: 100%;
@@ -138,7 +175,26 @@ html{
     height: 100%;
     padding: 15px;
     }
-    
+    .txtbox{
+    width:50%;
+    font-size: 24px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    }
+    .txtboxwrap{
+    column-count: 2;
+    flex-direction: row;
+    min-height: 0vw;
+    }
+    .gordon{
+   margin: auto;
+   padding: 20px;
+   height: 100%;
+}
+    .about{
+    font-size: 25px;
+}
     
     .masonry{
         column-count: 3;
