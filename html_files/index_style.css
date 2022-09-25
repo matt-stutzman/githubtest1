@@ -156,6 +156,9 @@ html{
     color: white;
     text-align: right;
 }
+img{
+    width: 100%;
+}
 
 
 /*For laptops only*/
@@ -194,6 +197,9 @@ html{
 }
     .about{
     font-size: 25px;
+}
+img{
+    width: 50%;
 }
     
     .masonry{
