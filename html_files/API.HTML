@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Stock Market</title>
-    </head>
-    
-    <body>
-        <h1>Have the Market Influence Your Tastes!</h1>
-        <h2>The stock market is nothing more than pure speculation.</h2>
-        <p>We here at celebrity beefs realize that the market has too much power. 
-        The stock market is nothing more than glorified horse racing where instead of betting on 
+
+<head>
+    <title>Stock Market</title>
+</head>
+
+<body>
+    <h1>Have the Market Influence Your Tastes!</h1>
+    <h2>The stock market is nothing more than pure speculation.</h2>
+    <p>We here at celebrity beefs realize that the market has too much power.
+        The stock market is nothing more than glorified horse racing where instead of betting on
         equestrians, one bets on cold corporations worth billions of dollars.
         <br>
         On this part of our page, you can find and see all the information that you'd like concerning these
-        enterprises that claim to benefit society. 
-        </p>
-        <script type="text/javascript" src="stockapi.js"></script>
-    </body>
+        enterprises that claim to benefit society.
+    </p>
+    <form class="inputbox">
+        <label class="prompt">Please enter a stock index here:</label>
+        <input id="stockInput" type="text"></input><br/>
+        <input id="stockSubmit" type="submit" value="MONEY MACHINE!"></input>
+    </form>
+    <div id="stockResults">
+    </div>
+    <script type="text/javascript" src="stockapi.js"></script>
+</body>
+
 </html>
