@@ -158,6 +158,9 @@ html{
 img{
     width: 100%;
 }
+.apiTextbox{
+    text-align: center;
+}
 
 
 /*For laptops only*/
