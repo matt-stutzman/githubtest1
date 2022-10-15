@@ -15,7 +15,7 @@ document.getElementById("stockSubmit").addEventListener("click", function(event)
             let results = "";
             
             results += json.quote;
-            results += "<br>";
+            results += "<br> -";
             results += json.author;
             
             document.getElementById("stockResults").innerHTML = results;
