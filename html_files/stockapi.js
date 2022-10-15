@@ -5,8 +5,29 @@ document.getElementById("stockSubmit").addEventListener("click", function(event)
     if (value === "")
         return;
     console.log(value);
-    const url = "https://api.kanye.rest/";
-    // const url = "https://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=38693ed7ce49fcdabbdf2c21e592565f";
+    const url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=WHLRIE9J6GWOI0HW";
+    //Instead of symbol = IBM above, it should be '...symbol=' +  value + '&interval...'
+    
+    //Below are two versions of how to load the API. 
+    //I think there is a CORS problem with at least the first one. 
+    // The global fetch might also be able to work. I think it isn't too far off. 
+    
+//     /*global request */
+//     request.get({
+//     url: url,
+//     json: true,
+//     headers: {'User-Agent': 'request'}
+//   }, (err, res, data) => {
+//     if (err) {
+//       console.log('Error:', err);
+//     } else if (res.statusCode !== 200) {
+//       console.log('Status:', res.statusCode);
+//     } else {
+//       // data is successfully parsed as a JSON object:
+//       console.log(data);
+//     }
+// });
+    
     /*global fetch*/
     fetch(url)
         .then(function(response) {
@@ -30,32 +51,8 @@ document.getElementById("stockSubmit").addEventListener("click", function(event)
             //         results += ", ";
             // }
             
-            document.getElementById("weatherResults").innerHTML = results;
+            document.getElementById("stockResults").innerHTML = results;
         });
-    // const url2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=38693ed7ce49fcdabbdf2c21e592565f";
-    // fetch(url2)
-    //     .then(function(response) {
-    //         return response.json();
-    //     }).then(function(json) {
-    //         console.log(json);
-    //         let forecast = "";
-    //         forecast += "<br>";
-    //         for (let i = 0; i < json.list.length; i++) {
-    //             /*global moment*/
-    //             forecast += "<div class='forecast'>";
-    //             forecast += "<h2 class = 'date'>" + moment(json.list[i].dt_txt).format('MMMM Do YYYY, h:mm:ss a') + "</h2>";
-    //             forecast += "<div class = 'pimgbox'>";
-    //             forecast += "<p>Temperature: " + json.list[i].main.temp + " degrees" + "</p>";
-    //             forecast += '<img src="http://openweathermap.org/img/w/' + json.list[i].weather[0].icon + '.png"/>';
-    //             forecast += "</div>";
-    //             forecast += "<div class ='cloudbox'>";
-    //             forecast += "It will be " + json.list[i].clouds.all + "% cloudy.";
-    //             forecast += "</div>";
-    //             forecast += "</div>";
-    //         }
-            
-    //         document.getElementById("forecastResults").innerHTML = forecast;
-    //     });
 });
 
 //api key == WHLRIE9J6GWOI0HW for alphavantage stock api
