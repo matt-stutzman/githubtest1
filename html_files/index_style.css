@@ -167,6 +167,8 @@ img{
 #buttonwrapper{
     display: flex;
     justify-content: center;
+    margin-left: -160px;
+    width: 125%;
 }
 #marsSubmit{
     width: 10%;
