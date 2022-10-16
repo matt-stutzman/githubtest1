@@ -176,6 +176,10 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+#home,#spctxt{
+    padding: 20px;
+    text-align: center;
+}
 
 /*For laptops only*/
 
