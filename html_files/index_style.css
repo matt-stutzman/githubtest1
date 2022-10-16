@@ -161,6 +161,9 @@ img{
 .apiTextbox{
     text-align: center;
 }
+.wait{
+    text-align: center;
+}
 #buttonwrapper{
     display: flex;
     justify-content: center;
