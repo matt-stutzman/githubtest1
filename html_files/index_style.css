@@ -161,7 +161,13 @@ img{
 .apiTextbox{
     text-align: center;
 }
-
+#buttonwrapper{
+    display: flex;
+    justify-content: center;
+}
+#marsSubmit{
+    width: 10%;
+}
 #spacetitle{
     text-align: center;
     font-style: italic;
