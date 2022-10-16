@@ -174,6 +174,7 @@ img{
 #spacetitle{
     text-align: center;
     font-style: italic;
+    margin:20px;
 }
 #spcimgbox{
     display:flex;
