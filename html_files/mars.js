@@ -20,7 +20,7 @@ document.getElementById("marsSubmit").addEventListener("click", function(event) 
             results += json.explanation;
             results += "</p>";
             results += "<div id = spcimgbox'>"
-            results +=  "<img src=" + json.url + ">";
+            results +=  "<img id='spcimg' src=" + json.url + ">";
             results += "</div>";
             
             document.getElementById("marsPhoto").innerHTML = results;
