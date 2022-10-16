@@ -162,7 +162,13 @@ img{
     text-align: center;
 }
 
-
+#spacetitle{
+    text-align: center;
+}
+#spcimgbox{
+    display:flex;
+    justify-content: center;
+}
 /*For laptops only*/
 
 @media only screen and (min-width:1024px){

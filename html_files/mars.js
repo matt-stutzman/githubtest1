@@ -13,8 +13,15 @@ document.getElementById("marsSubmit").addEventListener("click", function(event) 
             return response.json();
         }).then(function(json) {
             let results = "";
-            
+            results += "<h2 id='spacetitle'>";
+            results += json.title;
+            results += "</h2>";
+            results += "<p id='home'>";
+            results += json.explanation;
+            results += "</p>";
+            results += "<div id = spcimgbox'>"
             results +=  "<img src=" + json.url + ">";
+            results += "</div>";
             
             document.getElementById("marsPhoto").innerHTML = results;
         });
