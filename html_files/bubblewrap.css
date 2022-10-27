@@ -18,8 +18,7 @@ ol, ul {
 }
 
 .square {
-  border-radius:400px;
-  outline: yellow;
+  border-radius:100%;
   background: lightblue;
   border: red 20px red;
   float: left;
@@ -27,12 +26,12 @@ ol, ul {
   font-weight: bold;
   font-style: italic;
   line-height: 34px;
-  height: 120px;
+  height: 40px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 120px;
+  width: 40px;
 }
 
 .square:focus {
