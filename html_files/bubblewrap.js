@@ -17,6 +17,9 @@ class Board extends React.Component {
   }
   
   handleClick(i) {
+    /*global audio*/
+    const audio = new Audio("Popping-Single-Bubble-Wrap-www.fesliyanstudios.com.mp3");
+    audio.play();
     const squares = this.state.squares.slice();
     squares[i] = 'X';
     
