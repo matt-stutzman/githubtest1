@@ -23,10 +23,20 @@ class Board extends React.Component {
     const squares = this.state.squares.slice();
     squares[i] = 'X';
     
+    /*global changeColor*/
+    changeColor(i);
+    //Doesn't work lol
+    
+    
     this.setState({
       squares: squares,
       xIsNext: !this.state.xIsNext,
     });
+  }
+  
+  changeColor(i){
+    const e = this.state.squares.slice();
+    e[i].style.backgroundColor = "#FF0000";
   }
   
   renderSquare(i) {
