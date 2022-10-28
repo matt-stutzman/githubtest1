@@ -49,7 +49,7 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = 'Next player: ' + (this.state.xIsNext ? 'Brian':'Matt');
+    const status = 'Pop all the bubble wrap!!';
 
     return (
       <div>
