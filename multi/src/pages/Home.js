@@ -16,11 +16,8 @@ const Home = () => {
             </div>
         </div>
       
-        <div class='footer'>
-        <a href='menu.html'> Browse the finest cuts of celebrity beef</a> <br></br>
-        <a href='about.html'> About</a> <br></br>
-        <a href='purchase.html'> Purchase</a><br></br>
-        <a href='index.html'> www.celebritybeefs.com</a><br></br>
+       <div class='footer'>
+        <a href='https://github.com/matt-stutzman/githubtest1'> Github</a> <br></br>
         <p> Copyright Matthew Stutzman and Brian Hayes 2022</p>
        </div>
       
