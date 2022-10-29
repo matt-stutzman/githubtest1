@@ -23,10 +23,6 @@ class Board extends React.Component {
     const squares = this.state.squares.slice();
     squares[i] = 'X';
     
-    /*global changeColor*/
-    changeColor(i);
-    //Doesn't work lol
-    
     
     this.setState({
       squares: squares,
@@ -34,10 +30,7 @@ class Board extends React.Component {
     });
   }
   
-  changeColor(i){
-    const e = this.state.squares.slice();
-    e[i].style.backgroundColor = "#FF0000";
-  }
+
   
   renderSquare(i) {
     return(
@@ -185,10 +178,6 @@ class Game extends React.Component {
       <div className="game">
         <div className="game-board">
           <Board />
-        </div>
-        <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
         </div>
       </div>
     );
